@@ -1,12 +1,10 @@
 
-.header {
-    color: white;
-    margin-left: 940px;
-    padding-bottom: 400px;
-}
-
 .container {
-    
+    color: white;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    margin-right: 830px;
 }
 
 .sideSectionTitle {
