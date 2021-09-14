@@ -1,9 +1,18 @@
 
 .header {
-    font-size: 22;
-    color: black;
+    color: white;
+    margin-left: 940px;
+    padding-bottom: 400px;
 }
 
 .container {
     
+}
+
+.sideSectionTitle {
+    text-align: right;
+    align-items: flex-end;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
 }

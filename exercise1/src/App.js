@@ -61,6 +61,42 @@ function App() {
       }
     ];
 
+    const SideSectionData = [
+      {
+        SideSectionTitle: 'Luetuimmat'
+      },
+      {
+        SideSectionNumber1: '1',
+        SideSectionSubTitle1: 'Rikosepäilyt',
+        SideSectionText1: ' | EIT-huijaus: Kuolleeksi väitetyn irakilaismiehen tytär valehteli perheen taustoista jo turvapaikkahakemuksessa'
+      },
+      {
+        SideSectionNumber2: '2',
+        SideSectionSubTitle2: 'HS Vantaa',
+        SideSectionText2: ' | Vantaalle nousi vankilan näköinen päiväkoti, jota pilkataan nyt surutta verkossa'
+      },
+      {
+        SideSectionNumber3: '3',
+        SideSectionSubTitle3: 'Päivittyvä seuranta',
+        SideSectionText3: ' | STM: Parasetamolia tai deksametasonia sisältävien lääkkeiden myyntiä rajoitetaan - Ministeriö haluaa varmistaa valmisteiden riittävyyden'
+      },
+      {
+        SideSectionNumber4: '4',
+        SideSectionSubTitle4: 'Nyt.fi',
+        SideSectionText4: ' | Harry Styles puki ylleen suomalaisen suunnittelijan neuleen, nyt tätä "mummon" tilkkutäkkiä neulovat kummenet tuhannet ympäri maailman - Soitimme vaatesuunnittelijalle'
+      },
+      {
+        SideSectionNumber5: '5',
+        SideSectionSubTitle5: 'Rikosepäilyt',
+        SideSectionText5: ' | Atte Jääskeläinen sai syytteet liikenneturvallisuuden vaarantamisesta ja vammantuottamuksesta - "Olen myöntänyt syyllisyyteni'
+      },
+      {
+        SideSectionNumber6: '6',
+        SideSectionSubTitle6: 'Helsinki',
+        SideSectionText6: ' | Työryhmän ehdotus julki: Jättimäisestä hiilivoimalasta halutaan töysin uudenlainenen tapahtumapaikka kaupungin asukkaille'
+      }
+    ];
+
   return (
     <div>
       {
@@ -87,7 +123,33 @@ function App() {
           edeltaLuku2={ element.edeltaLuku2 }
           />)
       }
-      <SideSection />
+      {
+        SideSectionData.map(element => <SideSection SideSectionTitle={ element.SideSectionTitle }
+          SideSectionNumber1={ element.SideSectionNumber1 }
+          SideSectionSubTitle1={ element.SideSectionSubTitle1 }
+          SideSectionText1={ element.SideSectionText1 }
+
+          SideSectionNumber2={ element.SideSectionNumber2 }
+          SideSectionSubTitle2={ element.SideSectionSubTitle2 }
+          SideSectionText2={ element.SideSectionText2 }
+
+          SideSectionNumber3={ element.SideSectionNumber3 }
+          SideSectionSubTitle3={ element.SideSectionSubTitle3 }
+          SideSectionText3={ element.SideSectionText3 }
+
+          SideSectionNumber4={ element.SideSectionNumber4 }
+          SideSectionSubTitle4={ element.SideSectionSubTitle4 }
+          SideSectionText4={ element.SideSectionText4 }
+
+          SideSectionNumber5={ element.SideSectionNumber5 }
+          SideSectionSubTitle5={ element.SideSectionSubTitle5 }
+          SideSectionText5={ element.SideSectionText5 }
+
+          SideSectionNumber6={ element.SideSectionNumber6 }
+          SideSectionSubTitle6={ element.SideSectionSubTitle6 }
+          SideSectionText6={ element.SideSectionText6 }
+          />)
+        }
     </div>
   );
 }
