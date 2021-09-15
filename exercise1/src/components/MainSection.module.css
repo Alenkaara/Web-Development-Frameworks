@@ -1,66 +1,55 @@
 
+.background {
+    margin-top: 16px;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    margin-left: 230px;
+    margin-right: 1070px;
+}
+
 .container {
     display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px;
+}
+
+.imageSubText {
+    color: black;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.smallSubText {
+    padding-top: 15px;
+    font-size: 12;
+    font-weight: 400;
+}
+
+.news {
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+
+.sideSectionContainer {
+    font-weight: 600;
+    margin-left: 8px;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-right: 17px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideSectionTitle {
+    display: flex;
     flex-direction: row;
-    border-top: 2px;
-    border-color: black;
-}
-
-.container2 {
-
-}
-
-.bigTitle {
-    font-size: 28px;
-    font-weight: 800;
-    padding-left: 240px;
-}
-
-.redText {
-    font-weight: bold;
-    color: red;
-}
-
-.blueText {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
-    color: rgb(36, 79, 172);
 }
-
-.blackText {
-    font-size: 25px;
-    font-weight: 600;
-    color: black;
-}
-
-.smallBlackText {
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
-}
-
-.statusSmallBlackText {
-    padding-right: 90px;
-    font-size: 16px;
-    color: black;
-}
-
-.numbers {
-    margin-right: 475px;
-    margin-left: -270px;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.deadText {
-    margin-left: -885px;
-    font-size: 16px;
-    color: black;
-}
-
-.numbers2 {
-    margin-right: 250px;
-    font-size: 30px;
-    font-weight: 600;
-}
-

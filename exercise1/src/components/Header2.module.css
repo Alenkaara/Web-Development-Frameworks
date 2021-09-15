@@ -1,0 +1,17 @@
+
+.headerBackground {
+background-color: white;
+}
+
+.container {
+    display: flex;
+    gap: 24px;
+    width: 75%;
+    color: black;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}

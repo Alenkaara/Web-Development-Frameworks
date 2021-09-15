@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './NewsNotification.module.css';
 
-export default function NewsNotification(props) {
+export default function NewsNotification() {
     return (
         <div className={ styles.container }>
-            <span className={ styles.header }>{ props.topic }:</span> { props.body }
-            
+            Lööppi: Kadulla käveli neljä rapua - Katso ilmiömäiset kuvat
         </div>
+
     )
 }
