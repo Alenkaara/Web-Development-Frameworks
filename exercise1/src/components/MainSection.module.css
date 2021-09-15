@@ -1,7 +1,13 @@
 
 .container {
+    display: flex;
+    flex-direction: row;
     border-top: 2px;
     border-color: black;
+}
+
+.container2 {
+
 }
 
 .bigTitle {
