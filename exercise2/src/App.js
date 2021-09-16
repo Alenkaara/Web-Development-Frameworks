@@ -22,6 +22,26 @@ class App extends React.Component {
       ]
     };
 
+    /*setTimeout(() => {
+      // this.state.item = [];
+      this.setState({ items: [...this.state.items, {id: 5, value: "carrots", qty: 5, unit: 'pcs'}] });
+    }, 2000);
+    */
+
+    // this.addSomeCarrots = this.addSomeCarrots.bind(this);
+
+  }
+  addSomeCarrots = () => {
+    this.setState({ items: [...this.state.items, {id: 5, value: "Carrots", qty: 5, unit: 'pcs'}] });
+  }
+  addSomeStrawberries = () => {
+    this.setState({ items: [...this.state.items, {id: 6, value: "Strawberries", qty: 1, unit: 'box'}] });
+  }
+  addSomeYogurt = () => {
+    this.setState({ items: [...this.state.items, {id: 7, value: "Yogurt", qty: 2, unit: 'pcs'}] });
+  }
+  addSomeBeer = () => {
+    this.setState({ items: [...this.state.items, {id: 8, value: "Beer", qty: 6, unit: 'cans '}] });
   }
 
   render()
@@ -33,6 +53,10 @@ class App extends React.Component {
         applicationName={ applicationName }
       />
       <ShoppingList items={ this.state.items } />
+      <button onClick={ this.addSomeCarrots }>Add carrots</button>
+      <button onClick={ this.addSomeStrawberries }>Add strawberries</button>
+      <button onClick={ this.addSomeYogurt }>Add yogurt</button>
+      <button onClick={ this.addSomeBeer }>Add beer</button>
     </div>
   }
 }
