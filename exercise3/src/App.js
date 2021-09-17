@@ -1,7 +1,6 @@
 import React from 'react';
 import SearchView from './components/SearchView';
 import data from './data.json'
-import AdminView from './components/AdminView';
 
 class App extends React.Component {
   constructor(props)
@@ -10,7 +9,6 @@ class App extends React.Component {
     this.state = {
       items: data.items,
       productSearchString: "",
-      adminModeActive: false,
     }
   }
 
@@ -21,20 +19,6 @@ class App extends React.Component {
     this.setState({ productSearchString: event.target.value });
   }
 
-  addNewItem = (name, author, price) => {
-    let newItems = [...this.state.items];
-    newItems.push({
-      id: newItems.length + 1,
-      name: name,
-      author: author,
-      price: price
-    });
-
-    this.setState({
-      items: newItems
-    });
-  }
-
   deleteItem = itemId => this.setState({items: this.state.items.filter(item => item.id !== itemId)})
 
   render()
@@ -42,25 +26,11 @@ class App extends React.Component {
     let output =
       <>
         <div>
-          Search <input type="text" onChange={ this.onSearchFieldChange } value={ this.state.productSearchString }/>
+          Search (Case sensitive) <input type="text" onChange={ this.onSearchFieldChange } value={ this.state.productSearchString }/>
         </div>
         <SearchView
-          items={ this.state.items.filter((item) => item.name.includes(this.state.productSearchString)) }
-          />
-        <button onClick={() => this.setState({adminModeActive: !this.state.adminModeActive})}>Admin mode</button>
+          items={ this.state.items.filter((item) => item.name.includes(this.state.productSearchString)) }/>
       </>
-
-
-    if(this.state.adminModeActive) {
-      output = <AdminView
-                  disableAdminMode={() => this.setState({adminModeActive: false}) }
-                  addNewItem={ this.addNewItem }
-                  items={ this.state.items }
-                  deleteItem={ this.deleteItem }
-               />;
-    }
-
-
 
     return (
       <>

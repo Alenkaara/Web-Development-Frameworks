@@ -1,17 +1,48 @@
-.name
-{
-  font-weight: 700;
+
+.name {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   margin-top: 20px;
   margin-bottom: 5px;
-  font-size: 18px;
+  text-overflow: ellipsis;
 }
-.author
-{
-  color: #333333
+.author {
+  font-family: Arial, sans-serif;
+  color: gray;
 }
-.product
-{
+.product {
+  font-family: Arial, sans-serif;
   width: 33.33%;
   box-sizing: border-box;
   padding: 30px;
+  padding-left: 180px;
 }
+
+.rating {
+  color: orange
+}
+
+.ratingAmount {
+  color: rgb(0, 113, 133);
+  font-size: 14px;
+}
+
+.price {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+ }
+
+ .line {
+  color: lightgrey;
+ }
+
+ .arrivalLight {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+ }
+
+ .arrivalBold {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+ }
