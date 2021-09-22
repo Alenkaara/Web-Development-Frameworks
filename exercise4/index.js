@@ -8,6 +8,7 @@ const { v4: uuidv4 } = require('uuid');
 app.use(bodyParser.json());
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 let Product = [{
+    id: uuidv4(),
     name: 'G305 wireless mouse',
     manufacturer: 'Logitech',
     category: 'Mice',
@@ -15,15 +16,17 @@ let Product = [{
     price: '35.99€'
 }];
 
-let users = [{
+let User = [{
     id: uuidv4(),
     firstName: 'Mauno',
+    lastName: 'Väinämöinen',
     address: 'Jylväskuja 5', 
     age: '32',
 }];
 
 let Invoice = [{
     id: uuidv4(),
+    buyer: 'Mauno',
     products: '2x G305 wireless mouse',
     sum: '71.92€'
 }];
@@ -43,14 +46,14 @@ app.get('/products/:id', (req, res) => {
     res.json(result);
 });
 
-app.post('/products', (req, res) => {
+app.post('/products/add', (req, res) => {
     console.log('Creating a new product');
     console.log(req.body);
 
-    dogs.push ({
+    Product.push ({
       id: uuidv4(),
       name: req.body.name,
-      manufacturer: req.body.age,
+      manufacturer: req.body.manufacturer,
       category: req.body.category,
       description: req.body.description,
       price: req.body.price
@@ -81,15 +84,37 @@ app.get('/products/:category', (req, res) => {
     res.json(result);
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-app.get('/Invoice/', (req, res) => {
-    res.send('Getting all Invoice of a user');
+app.get('/users', (req, res) => {
+    res.json(User);
+    console.log('Get all users');
 });
 
-app.get('/Invoice/', (req, res) => {
-    res.send('Getting a singlke invoice of a user');
+app.post('/users/add', (req, res) => {
+    console.log('Creating a new user');
+    console.log(req.body);
+
+    User.push ({
+      id: uuidv4(),
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      address: req.body.address,
+      age: req.body.age
+    })
+
+    res.send('New user created');
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+app.get('/invoices/:buyer', (req, res) => {
+    res.send('Getting all invoices of a user');
+    res.json(Invoice);
 });
 
-app.delete('/Invoice/:id', (req, res) => {
+/*app.get('/invoices/', (req, res) => {
+    res.send('Getting a single invoice of a user');
+});
+*/
+
+app.delete('/invoices/:id', (req, res) => {
 
     const result = Invoice.findIndex(i => i.id === req.params.id)
     if(result !== -1) {
@@ -98,6 +123,20 @@ app.delete('/Invoice/:id', (req, res) => {
     } else {
       res.send('No such invoice found');
     }  
+});
+
+app.post('/invoices/purchase', (req, res) => {
+    console.log('Making a purchase');
+    console.log(req.body);
+
+    Invoice.push ({
+      id: uuidv4(),
+      buyer: req.body.buyer,
+      products: req.body.products,
+      sum: req.body.sum,
+    })
+
+    res.send('New purchase made!');
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 app.listen(port, () => {
