@@ -29,7 +29,14 @@ let Invoice = [{
     buyer: 'Mauno',
     products: '2x G305 wireless mouse',
     sum: '71.92€'
-}];
+},
+{
+    id: uuidv4(),
+    buyer: 'Mauno',
+    products: 'Monitor',
+    sum: '231.92€'
+}
+];
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 app.get('/', (req, res) => {
     res.send('Welcome to the generic e-commerce application')
@@ -73,13 +80,13 @@ app.get('/products/:name', (req, res) => {
 });
 
 app.get('/products/:manufacturer', (req, res) => {
-    const result = Product.find(p => p.name === req.params.name);
+    const result = Product.find(p => p.manufacturer === req.params.manufacturer);
     console.log('Searching for products with name');
     res.json(result);
 });
 
 app.get('/products/:category', (req, res) => {
-    const result = Product.find(p => p.name === req.params.name);
+    const result = Product.find(p => p.category === req.params.category);
     console.log('Searching for products with name');
     res.json(result);
 });
@@ -104,15 +111,22 @@ app.post('/users/add', (req, res) => {
     res.send('New user created');
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-app.get('/invoices/:buyer', (req, res) => {
-    res.send('Getting all invoices of a user');
-    res.json(Invoice);
+app.get('/invoices/buyer/:buyerId', (req, res) => {
+    let invoices = []
+    for (let i = 0; i < Invoice.length; i++) {
+        if(Invoice[i].buyer == req.params.buyerId) {
+            invoices.push (Invoice[i])
+        }
+    }
+    res.json(invoices);
 });
 
-/*app.get('/invoices/', (req, res) => {
-    res.send('Getting a single invoice of a user');
+app.get('/invoices/buyer/:InvoiceId', (req, res) => {
+    const result = Invoice.find(i => i.buyer === req.params.buyer);
+    console.log('Get a single invoice of a user');
+    res.json(result);
 });
-*/
+
 
 app.delete('/invoices/:id', (req, res) => {
 
