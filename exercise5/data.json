@@ -1,0 +1,194 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "A Book of Bees",
+        "author": "by Sue Hubbell",
+        "type": "Books/Information",
+        "price": 7.50,
+        "rating": "★★★★☆",
+        "ratingAmount": " ˅ 896",
+        "image": "book1.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "Winner of the Pulitzer Prize in Fiction",
+          "Shortlisted for the Man Booker Prize",
+          "New York Times Bestseller",
+          "A New York Times Notable Book and a Washington Post, Time, Oprah Magazine, Newsweek, Chicago Tribune, and Kirkus Reviews Best Book of 2018",
+          "The best novel ever written about trees, and really just one of the best novels, period.' ―Ann"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tatu ja Patu Työn Touhussa",
+        "author": "by Otava",
+        "type": "Books/Fiction/Children",
+        "price": 12.19,
+        "rating": "★★★★☆",
+        "ratingAmount": " ˅ 439",
+        "image": "book2.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "Winner of the 2019 Pulitzer Prize for Drama",
+          "Dazzling and ruthless…One of the most exquisitely and systematically arranged ambushes of an unsuspecting audience in years… A glorious, scary reminder of the unmatched power of live theater to rattle, roil and shake us wide awake. —Ben Brantley, New York Times",
+          "Grandma’s birthday approaches. Beverly is organizing the perfect dinner, but everything seems doomed from the start: the silverware is all wrong, the carrots need chopping and the radio is on the fritz. What at first appears to be a family comedy takes a sharp, sly turn into a startling examination of deep-seated paradigms about race in America."
+        ]
+      },
+      {
+        "id": 3,
+        "name": "The Name of The Wind",
+        "author": "by Patrick Rothfuss ",
+        "type": "Hardcover",
+        "price": 18.99,
+        "rating": "★★★★★",
+        "ratingAmount": " ˅ 2,450",
+        "image": "book3.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "*Winner of the 2019 Pulitzer Prize in History*",
+          "*Winner of the Bancroft, Parkman, Los Angeles Times (biography), Lincoln, Plutarch, and Christopher Awards*",
+          "Named one of the Best Books of 2018 by The New York Times Book Review, The Wall Street Journal, The Boston Globe, The Chicago Tribune, The San Francisco Chronicle, and Time"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "The Hitchhiker's Guide to the Galaxy",
+        "author": "by Douglas Adams",
+        "type": "Hardcover",
+        "price": 11.99,
+        "rating": "★★★★★",
+        "ratingAmount": " ˅ 6,456",
+        "image": "book4.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "WINNER OF THE 2019 PULITZER PRIZE IN POETRY",
+          "LONGLISTED FOR THE 2018 NATIONAL BOOK AWARD",
+          "Publishers Weekly Best Poetry Book of 2018"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Doctor Strange",
+        "author": "by Marvel Studios",
+        "type": "DVD",
+        "price": 8.99,
+        "rating": "★★★★★",
+        "ratingAmount": " ˅ 14,741",
+        "image": "dvd1.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "Doctor Stephen Strange becomes the Sorcerer Supreme in this film version of the Master of the Mystic Arts."
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Valmet 500 Maitosuklaa",
+        "author": "by Karl Fazer",
+        "type": "Milk chocolate",
+        "price": 2.15,
+        "rating": "★☆☆☆☆",
+        "ratingAmount": " ˅ 115",
+        "image": "fazer1.png",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "''Who came up with this flavor? It's exquisite'' - Alfred Einstein"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Hardwood table",
+        "author": "by Karl Kunde und swcheitze",
+        "type": "Table",
+        "price": 179.99,
+        "rating": "★★☆☆☆",
+        "ratingAmount": " ˅ 598",
+        "image": "table1.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "Decorate your house with this high quality designer table by Karl Kunde unc swcheitze"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Mochenfuncken kettle",
+        "author": "by Mochenfuncken ",
+        "type": "Kettle",
+        "price": 49.99,
+        "rating": "★★★★☆",
+        "ratingAmount": " ˅ 1,135",
+        "image": "kettle1.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "It boils water. Careful, it might burn you."
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Doritos: Cursed Amulet",
+        "author": "by Doritos",
+        "type": "Corn chips",
+        "price": 2.99,
+        "rating": "★★★★☆",
+        "ratingAmount": " ˅ 23,879",
+        "image": "doritos1.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "Can you eat the whole bag before the witch escapes the amulet and exterminates the human race?"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Nanoleaf RGB LED Panels",
+        "author": "by Xiaomi",
+        "type": "LED Lighting and bulbs",
+        "price": 220.99,
+        "rating": "★★★★★",
+        "ratingAmount": " ˅ 6,948",
+        "image": "nanoleaf1.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "Spice up your house or room with these nifty LED panels"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "PlayStation 5 controller White/black",
+        "author": "by Sony",
+        "type": "Console accessories",
+        "price": 69.99,
+        "rating": "★★★★☆",
+        "ratingAmount": " ˅ 4,938",
+        "image": "ps5controller1.jpg",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "Get the next generation PS5 controller"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Vehnätortilla 6kpl",
+        "author": "by Santa Maria",
+        "type": "Food",
+        "price": 2.15,
+        "rating": "★★★☆☆",
+        "ratingAmount": " ˅ 701",
+        "image": "tortilla1.png",
+        "arrivalLight": "Arrives: ",
+        "arrivalBold": "Tuesday, Sep 28",
+        "promos": [
+          "Get some tortilla bread"
+        ]
+      }
+    ]
+  }
