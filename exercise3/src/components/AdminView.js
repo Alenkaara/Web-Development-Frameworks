@@ -8,6 +8,7 @@ export default function AdminView(props) {
   const [newItemPrice, setNewItemPrice] = useState("");
 
   const addNewItem = () => {
+    console.log("AdminView.js addNewItem log");
     props.addNewItem(newItemName, newItemAuthor, newItemType, newItemPrice);
   }
 
@@ -15,6 +16,7 @@ export default function AdminView(props) {
     console.log("clicked delete for item id " + itemId);
     props.deleteItem(itemId);
   }
+
 
   return (
     <div>

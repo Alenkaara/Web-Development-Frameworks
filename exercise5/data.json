@@ -10,14 +10,7 @@
         "ratingAmount": " ˅ 896",
         "image": "book1.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "Winner of the Pulitzer Prize in Fiction",
-          "Shortlisted for the Man Booker Prize",
-          "New York Times Bestseller",
-          "A New York Times Notable Book and a Washington Post, Time, Oprah Magazine, Newsweek, Chicago Tribune, and Kirkus Reviews Best Book of 2018",
-          "The best novel ever written about trees, and really just one of the best novels, period.' ―Ann"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 2,
@@ -29,12 +22,7 @@
         "ratingAmount": " ˅ 439",
         "image": "book2.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "Winner of the 2019 Pulitzer Prize for Drama",
-          "Dazzling and ruthless…One of the most exquisitely and systematically arranged ambushes of an unsuspecting audience in years… A glorious, scary reminder of the unmatched power of live theater to rattle, roil and shake us wide awake. —Ben Brantley, New York Times",
-          "Grandma’s birthday approaches. Beverly is organizing the perfect dinner, but everything seems doomed from the start: the silverware is all wrong, the carrots need chopping and the radio is on the fritz. What at first appears to be a family comedy takes a sharp, sly turn into a startling examination of deep-seated paradigms about race in America."
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 3,
@@ -46,12 +34,7 @@
         "ratingAmount": " ˅ 2,450",
         "image": "book3.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "*Winner of the 2019 Pulitzer Prize in History*",
-          "*Winner of the Bancroft, Parkman, Los Angeles Times (biography), Lincoln, Plutarch, and Christopher Awards*",
-          "Named one of the Best Books of 2018 by The New York Times Book Review, The Wall Street Journal, The Boston Globe, The Chicago Tribune, The San Francisco Chronicle, and Time"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 4,
@@ -63,12 +46,7 @@
         "ratingAmount": " ˅ 6,456",
         "image": "book4.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "WINNER OF THE 2019 PULITZER PRIZE IN POETRY",
-          "LONGLISTED FOR THE 2018 NATIONAL BOOK AWARD",
-          "Publishers Weekly Best Poetry Book of 2018"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 5,
@@ -80,10 +58,7 @@
         "ratingAmount": " ˅ 14,741",
         "image": "dvd1.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "Doctor Stephen Strange becomes the Sorcerer Supreme in this film version of the Master of the Mystic Arts."
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 6,
@@ -95,10 +70,7 @@
         "ratingAmount": " ˅ 115",
         "image": "fazer1.png",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "''Who came up with this flavor? It's exquisite'' - Alfred Einstein"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 7,
@@ -110,10 +82,7 @@
         "ratingAmount": " ˅ 598",
         "image": "table1.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "Decorate your house with this high quality designer table by Karl Kunde unc swcheitze"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 8,
@@ -125,10 +94,7 @@
         "ratingAmount": " ˅ 1,135",
         "image": "kettle1.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "It boils water. Careful, it might burn you."
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 9,
@@ -140,10 +106,7 @@
         "ratingAmount": " ˅ 23,879",
         "image": "doritos1.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "Can you eat the whole bag before the witch escapes the amulet and exterminates the human race?"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 10,
@@ -155,10 +118,7 @@
         "ratingAmount": " ˅ 6,948",
         "image": "nanoleaf1.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "Spice up your house or room with these nifty LED panels"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 11,
@@ -170,10 +130,7 @@
         "ratingAmount": " ˅ 4,938",
         "image": "ps5controller1.jpg",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "Get the next generation PS5 controller"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       },
       {
         "id": 12,
@@ -185,10 +142,7 @@
         "ratingAmount": " ˅ 701",
         "image": "tortilla1.png",
         "arrivalLight": "Arrives: ",
-        "arrivalBold": "Tuesday, Sep 28",
-        "promos": [
-          "Get some tortilla bread"
-        ]
+        "arrivalBold": "Tuesday, Sep 28"
       }
     ]
   }
