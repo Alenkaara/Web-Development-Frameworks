@@ -20,13 +20,9 @@ app.get('/products', (req, res) => {
 });
 
 app.post('/products', (req, res) => {
-  console.log(req.body);
   let lastId = productData.items[productData.items.length -1].id;
-  console.log(lastId);
   let newObj = {id: ++lastId, ...req.body}
-  console.log(newObj);
   productData.items.push(newObj);
-  console.log(productData);
   res.json(productData)
 });
 

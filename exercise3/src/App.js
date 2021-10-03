@@ -31,53 +31,30 @@ class App extends React.Component {
     this.setState({ productSearchString: event.target.value });
   }
 
-  /*addNewItem = (name, author, type, price) => {
-    console.log(name)
-  axios.post('http://localhost:4000/products', { name, author, type, price })
-  .then(function(response) {
-    console.log(response.data.items)
-    //let oldItems = [...this.state.items];
-    console.log(this);
-    this.setState({ items: response.data.items });
-  })
-  .catch(function (error) {
-    console.log(error)
-  });
+  addNewItem = (name, author, type, price) => {
+    axios.post('http://localhost:4000/products',{name, author, type, price})
+    let newItems = [...this.state.items];
+    newItems.push({
+      id: newItems.length + 1,
+      name: name,
+      author: author,
+      type: type,
+      price: price
+    });
+
+    this.setState({
+      items: newItems
+    });
   }
-  */
-
-   addNewItem (name, author, type, price) {
-     console.log("Adding new item")
-     axios.post('http://localhost:4000/products', { name, author, type, price })
-       .then(function(response) {
-       console.log(response)
-       this.setState({ items: response.data.items });
-       })
-    }
-  // addNewItem = (name, author, type, price) => {
-  //   let newItems = [...this.state.items];
-  //   newItems.push({
-  //     id: newItems.length + 1,
-  //     name: name,
-  //     author: author,
-  //     price: price
-  //   });
-
-  //   this.setState({
-  //     items: newItems
-  //   });
-  // }
 
   deleteItem = itemId => {
     axios.delete('http://localhost:4000/products/' + itemId)
       .then(response => {
       console.log(response);
       this.setState({items: this.state.items.filter(item => item.id !== itemId)})
-      //this.setState({items: response.data });
     })
       .catch(err => console.log(err));
    }
-
 
   //deleteItem = itemId => this.setState({items: this.state.items.filter(item => item.id !== itemId)})
 
